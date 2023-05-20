@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../WebGL-Intro"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "intro-self"
+	}
+}
