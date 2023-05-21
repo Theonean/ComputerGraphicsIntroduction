@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: auto;
+    position: relative;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* keep the canvas behind all other content */
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1, header h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    width: 55%;
+    margin: 50px auto;
+    /* auto will center the card */
+    padding: 30px;
+    transition: transform .2s; /* Animation effect */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Enlarge the card a bit when hovered */
+}
+
+.project-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.project-card p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.project-card a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card a{
+    display: inline-block;
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+}

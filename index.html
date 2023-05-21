@@ -4,26 +4,61 @@
 <head>
     <meta charset="UTF-8" />
     <title>WebGL - COMPGI</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="Woche3Pong/colorPallete.js"></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
 </head>
 
 <body>
-    <h1>WebGL - COMPGI</h1>
-    <h2>Hauptseite für Wochenzugriff</h2>
+    <header>
+        <div class="header-content">
+            <h1>WebGL - COMPGI</h1>
+        </div>
+        <p>On this Navigation Page you can find all kinds of Projects created as part of my COMGI Module at HSLU.</p>
+    </header>
+
     <div id="paletteInfo"> </div>
-    <h1>Link List</h1>
-    <ul id="linkList">
-        <ul id="linkList">
-            <li><a href="./Woche1Squares/index.html">Woche 1 - Squares</a></li>
-            <li><a href="./Woche2TextureMapping/index.html">Page 2 - TextureMapping</a></li>
-            <li><a href="./Woche3Pong/index.html">Page 3 - Pong</a></li>
-            <li><a href="./Woche4Square3D/index.html">Page 4</a></li>
-            <li><a href="./5/index.html">Page 5</a></li>
-            <li><a href="./6/index.html">Page 6</a></li>
-            <li><a href="./7/index.html">Page 7</a></li>
-            <li><a href="./8/index.html">Page 8</a></li>
-            <li><a href="./9/index.html">Page 9</a></li>
-            <li><a href="./10/index.html">Page 10</a></li>
-        </ul>
-    </ul>
+    <div id="projects">
+        <div class="project-card">
+            <a href="./Woche1Squares/index.html">
+                <div class="card-content">
+                    <h3>Woche 1</h3>
+                    <p>Squares</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="project-card">
+            <a href="./Woche2TextureMapping/index.html">
+                <div class="card-content">
+                    <h3>Woche 2</h3>
+                    <p>Texture Mapping</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="project-card">
+            <a href="./Woche3Pong/index.html">
+                <div class="card-content">
+                    <h3>Woche 3</h3>
+                    <p>Pong</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="project-card">
+            <a href="./Woche4Square3D/index.html">
+                <div class="card-content">
+                    <h3>Woche 4</h3>
+                    <p>3D Squares</p>
+                </div>
+            </a>
+        </div>
+        <!-- Repeat this structure for the rest of the projects -->
+    </div>
+
 </body>
+
 </html>
