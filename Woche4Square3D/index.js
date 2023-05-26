@@ -114,7 +114,7 @@ function drawAnimated(timeStamp) {
     //clamps i between 0 and two pi or adds a bit to angle
     cameraAngle += cameraAngle < (Math.PI * 2) ? 0.01 : -Math.PI * 2;;
 
-    let eye = vec3.fromValues(10, 10, 20); // Camera is at (0,0,0)
+    let eye = vec3.fromValues(cameraAngle * 10, cameraAngle * 10, 0); // Camera is at (0,0,0)
     let center = vec3.fromValues(0.5, 0.5, 0.5); // Looks at the origin
     let up = vec3.fromValues(0, 1, 0); // "Up" is in positive Y direction
 
